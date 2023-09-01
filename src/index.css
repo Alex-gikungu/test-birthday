@@ -1,0 +1,234 @@
+body {
+  font-family: Arial, sans-serif;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.container {
+  width: 80%;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.dark-theme {
+  background-color: #333;
+  color: white;
+}
+
+.light-theme {
+  background-color: #fff;
+  color: #333;
+}
+
+/* Add your other styles here */
+
+
+/* ... (previous styles) */
+
+/* ... (previous styles) */
+
+/* ... (previous styles) */
+
+.countdown-container {
+  display: flex;
+  align-items: center;
+}
+
+.countdown-text {
+  font-size: 20px;
+  margin-left:40px;
+  font-weight: bold;
+}
+
+.countdown-days {
+  color: #007bff; /* Blue for days */
+  margin-right: 5px;
+  font-size:xx-large;
+}
+
+.countdown-hours {
+  color: #28a745; /* Green for hours */
+  margin-right: 5px;
+  font-size: larger;
+}
+
+.countdown-minutes {
+  color: #ffc107; /* Yellow for minutes */
+  margin-right: 5px;
+  font-size: large;
+}
+
+.countdown-seconds {
+  color: #dc3545; /* Red for seconds */
+  margin-right: 5px;
+  font-size: medium;
+}
+
+.birthday-emoji-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffc107;
+  color: white;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 24px;
+  margin-left: 10px;
+}
+
+
+
+
+
+
+/* ... (previous styles) */
+
+.footer {
+  background-color: olive;
+  padding: 20px;
+  text-align: center;
+}
+
+.contact-info {
+  display: flex; /* Use flexbox to align items horizontally */
+  flex-wrap: wrap; /* Wrap items to a new line if they exceed the container's width */
+  justify-content: center; /* Center items horizontally within the container */
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.contact-info p {
+  margin: 8px; /* Add spacing between items */
+  font-size: 16px;
+}
+
+.contact-info a {
+  color: #007bff;
+  text-decoration: none;
+  margin: 0 10px; /* Add spacing between links */
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
+}
+
+.flower {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-image: url('./assets/1.jpeg');
+  background-size: cover;
+  animation: flowerAnimation linear infinite;
+}
+
+@keyframes flowerAnimation {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(100vh);
+  }
+}
+
+
+.input-section{
+  display: flex;
+  margin-top:5px;
+  padding: 40px;
+  margin-left:14%;
+}
+input{
+  background-color: #ffc107;
+  width:200px;
+  height:40px;
+  border-radius: 10px;
+  margin: 30px;
+}
+
+
+.countdown-section{
+  background-color:olive;
+  border-radius:10px;
+  
+}
+button{
+  margin-left:50%;
+  width:70px;
+  height: 30px;
+  font-size: larger;
+}
+
+.user-details{
+  background-color:dimgrey;
+  border-radius: 10px;
+  text-align: center;
+}
+.App h1{
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+/* Add this CSS to your existing stylesheet */
+
+.message-section {
+  margin-top: 20px;
+  padding: 20px;
+  text-align: center;
+  background-color: dimgrey;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.message-section p {
+  margin: 0;
+  font-size: 18px;
+}
+
+.theme{
+  margin-left:10px;
+}
+
+
+
+/* Import your CSS here */
+
+
+
+/* Media queries for responsive design */
+@media screen and (max-width: 768px) {
+  /* Styles for tablets and smaller screens */
+  .container {
+    padding: 10px;
+  }
+
+  /* Define a global style for your application */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Default styling for large screens */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+}
+
+@media screen and (max-width: 576px) {
+  /* Styles for smartphones */
+  .container {
+    padding: 5px;
+  }
+
+  /* Additional styles for elements that need to change on smaller screens */
+  /* For example, you might want to change font sizes, margins, or hide certain elements */
+}
